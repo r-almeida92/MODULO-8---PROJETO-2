@@ -48,7 +48,7 @@ function atualizaTabela() {
 function atualizaMediaFinal() {
     const mediaFinal = calculaMediaFinal(); /* Calcula a média final das notas */
 
-    document.getElementById('media-final-valor').innerHTML = mediaFinal; /* Exibe a média final no HTML */
+    document.getElementById('media-final-valor').innerHTML = mediaFinal.toFixed(2); /* Exibe a média final no HTML */
     document.getElementById('media-final-resultado').innerHTML = mediaFinal >= notaMinima ? spanAprovado : spanReprovado; /* Exibe a mensagem de aprovado ou reprovado dependendo da média */
 }
 
